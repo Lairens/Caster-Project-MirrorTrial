@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4541535440432789946}
   - component: {fileID: 198886807182387659}
   - component: {fileID: 1443664057409150579}
-  - component: {fileID: -3426184641523857310}
   - component: {fileID: 3914990827850823071}
   m_Layer: 0
   m_Name: PlayerManager
@@ -109,21 +108,6 @@ MonoBehaviour:
   lightningSpell: {fileID: 623320327997802716, guid: dc9c02b5c72ac974ca35224461ca83db, type: 3}
   shieldSpell: {fileID: 7799477501476839705, guid: 95f810ab7d9bfde4fb3e3930a997906e, type: 3}
   slowSpell: {fileID: 4115439728550885118, guid: 7d4c0360bd565984aa64aaafd3a3b08e, type: 3}
---- !u!114 &-3426184641523857310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383568702062447747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fc046790362869409354fbc2741427d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  playerManager: {fileID: 1443664057409150579}
 --- !u!114 &3914990827850823071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,7 +135,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -3426184641523857310}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
         m_MethodName: OnSpell_0
         m_Mode: 0
@@ -167,7 +151,7 @@ MonoBehaviour:
     m_ActionName: Player/Spell_0[/Keyboard/q]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -3426184641523857310}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
         m_MethodName: OnSpell_1
         m_Mode: 0
@@ -183,7 +167,7 @@ MonoBehaviour:
     m_ActionName: Player/Spell_1[/Keyboard/w]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -3426184641523857310}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
         m_MethodName: OnSpell_2
         m_Mode: 0
@@ -199,7 +183,7 @@ MonoBehaviour:
     m_ActionName: Player/Spell_2[/Keyboard/e]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -3426184641523857310}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
         m_MethodName: OnRandomizeSpell
         m_Mode: 0
@@ -215,7 +199,7 @@ MonoBehaviour:
     m_ActionName: Player/RandomizeSpell[/Keyboard/r]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -3426184641523857310}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
         m_MethodName: OnCastSpell
         m_Mode: 0
