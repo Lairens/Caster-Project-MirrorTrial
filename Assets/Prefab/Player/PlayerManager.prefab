@@ -101,15 +101,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  mainArea: {fileID: 1835202168830720592, guid: 0d6ea03000fe04646861be5c93b75fc5, type: 3}
-  playerArea: {fileID: 5527597983245425239, guid: 57f7e73dd30e6aa40915491bcd8ca5cb, type: 3}
-  enemyArea: {fileID: 9024939524302803968, guid: 41eef3335e1b41042b671bbf3012dd15, type: 3}
-  spells:
-  - {fileID: 8638076804351404264, guid: 84b95f5c7cf3fb24a8cc75ea14c81d53, type: 3}
-  - {fileID: 1186665567751469984, guid: 81e2d0d892d509140b96e07a43e80ff4, type: 3}
-  - {fileID: 623320327997802716, guid: dc9c02b5c72ac974ca35224461ca83db, type: 3}
-  - {fileID: 7799477501476839705, guid: 95f810ab7d9bfde4fb3e3930a997906e, type: 3}
-  - {fileID: 4115439728550885118, guid: 7d4c0360bd565984aa64aaafd3a3b08e, type: 3}
+  mainArea: {fileID: 0}
+  playerArea: {fileID: 0}
+  enemyArea: {fileID: 0}
+  fireSpell: {fileID: 2248814987416968441, guid: 84b95f5c7cf3fb24a8cc75ea14c81d53, type: 3}
+  iceSpell: {fileID: 1186665567751469984, guid: 81e2d0d892d509140b96e07a43e80ff4, type: 3}
+  lightningSpell: {fileID: 623320327997802716, guid: dc9c02b5c72ac974ca35224461ca83db, type: 3}
+  shieldSpell: {fileID: 7799477501476839705, guid: 95f810ab7d9bfde4fb3e3930a997906e, type: 3}
+  slowSpell: {fileID: 4115439728550885118, guid: 7d4c0360bd565984aa64aaafd3a3b08e, type: 3}
 --- !u!114 &-3426184641523857310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  playerManager: {fileID: 0}
+  playerManager: {fileID: 1443664057409150579}
 --- !u!114 &3914990827850823071
 MonoBehaviour:
   m_ObjectHideFlags: 0

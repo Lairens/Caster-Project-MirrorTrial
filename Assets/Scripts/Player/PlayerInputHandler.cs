@@ -11,13 +11,11 @@ public class PlayerInputHandler : NetworkBehaviour
     public override void OnStartClient()
     {
         base.OnStartClient();
-
-        // Caching the client own connection ID for later use
+        if(!hasAuthority) {return;}
         NetworkIdentity networkIdentity = NetworkClient.connection.identity;
-
-        // Grabbing the Player Manager of the player object linked to the client
         playerManager = networkIdentity.GetComponent<PlayerManager>();
     }
+    
 
     #region Player Inputs
 
